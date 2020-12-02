@@ -1,4 +1,4 @@
-#include "partie2.h"
+#include "PARTIE2.h"
 #include <stdlib.h>
 
 
