@@ -1,3 +1,12 @@
+/*****************************************************************//**
+ * \file   PARTIE1.h
+ * \brief  Conversion caracteres d'un fichier texte en binaire.
+ *
+ * \author Camelia MAHRAZ camelia.mahraz@efrei.net
+ * \date   December 2020
+ *********************************************************************/
+
+
 #ifndef PARTIE1_h
 #define PARTIE1_h
 #include <stdio.h>
@@ -7,8 +16,6 @@
 * \brief Function to convert a character to bits.
 * \return nothing it is a void function.
 */
-
-
 void convertir_binaire(int*, char*);
 
 /**

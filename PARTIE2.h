@@ -1,6 +1,6 @@
 /*****************************************************************//**
  * \file   PARTIE2.h
- * \brief  Création de l'arbre Huffman première version.
+ * \brief  Creation de l'arbre Huffman premiere version.
  *
  * \author Camelia MAHRAZ camelia.mahraz@efrei.net
  * \date   December 2020
@@ -40,9 +40,7 @@ typedef struct Noeud
 * \endcode
 * \return the first Element's pointer, if the Element is created.
 * \return \c NULL, if the Element could not be created.
- *
- * .
- */
+*/
 Element* creer_Element(char);
 
 /**

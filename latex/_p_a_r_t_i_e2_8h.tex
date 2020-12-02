@@ -1,0 +1,258 @@
+\hypertarget{_p_a_r_t_i_e2_8h}{}\doxysection{P\+A\+R\+T\+I\+E2.\+h File Reference}
+\label{_p_a_r_t_i_e2_8h}\index{PARTIE2.h@{PARTIE2.h}}
+
+
+Creation de l\textquotesingle{}arbre Huffman premiere version.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_element}{Element}}
+\item 
+struct \mbox{\hyperlink{struct_noeud}{Noeud}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_p_a_r_t_i_e2_8h_a4d9e4171e0ee83fe777219f894992340}\label{_p_a_r_t_i_e2_8h_a4d9e4171e0ee83fe777219f894992340}} 
+typedef struct \mbox{\hyperlink{struct_element}{Element}} {\bfseries Element}
+\item 
+\mbox{\Hypertarget{_p_a_r_t_i_e2_8h_a8e9241b13e33c89b710a91795150ede0}\label{_p_a_r_t_i_e2_8h_a8e9241b13e33c89b710a91795150ede0}} 
+typedef struct \mbox{\hyperlink{struct_noeud}{Noeud}} {\bfseries Noeud}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_element}{Element}} $\ast$ \mbox{\hyperlink{_p_a_r_t_i_e2_8h_a322e21a801cd141a59078a681c7d0735}{creer\+\_\+\+Element}} (char)
+\begin{DoxyCompactList}\small\item\em Function to create an element of a simply linked list with a letter and its occurrence. ~\newline
+ Example \+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_p_a_r_t_i_e2_8h_ab14c0b2939fb5dc7d05e55a43cc2609c}{ajouter\+\_\+valeur\+\_\+liste\+\_\+fin}} (\mbox{\hyperlink{struct_element}{Element}} $\ast$, char)
+\begin{DoxyCompactList}\small\item\em Function to add an element at the end of a simply linked list with a letter and its occurrence. ~\newline
+ Example \+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_p_a_r_t_i_e2_8h_a93bc34dfab8cb4315473a54c918737e7}{ajouter\+\_\+un\+\_\+a\+\_\+occurence}} (\mbox{\hyperlink{struct_element}{Element}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Function which increment the occurrence of the given character in a simply linked list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_p_a_r_t_i_e2_8h_ac0ed2ce23f797f91c40ac5e6be8d2b29}{afficher\+\_\+\+Liste}} (\mbox{\hyperlink{struct_element}{Element}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Function to display the elements of the simply linked list. ~\newline
+ Example \+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_p_a_r_t_i_e2_8h_ae4fe484524f665c81337b4d5bbac5524}{liberer\+\_\+liste}} (\mbox{\hyperlink{struct_element}{Element}} $\ast$$\ast$)
+\begin{DoxyCompactList}\small\item\em Function to free memory of a simply linked list. ~\newline
+ Example \+: \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_element}{Element}} $\ast$ \mbox{\hyperlink{_p_a_r_t_i_e2_8h_ad3642a1d2cdc61b0ab5f725861ef2824}{condition\+\_\+liste\+\_\+caracteres\+\_\+occurrences}} (\mbox{\hyperlink{struct_element}{Element}} $\ast$, char)
+\begin{DoxyCompactList}\small\item\em Function which checks if the character exists and if so how to add it in the simply linked list and else increment the occurrence. ~\newline
+ Example \+: \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_element}{Element}} $\ast$ \mbox{\hyperlink{_p_a_r_t_i_e2_8h_ae8317d94837eb838a5845a5167031ba8}{occurrence\+\_\+caractere}} ()
+\begin{DoxyCompactList}\small\item\em Function to create a simply linked list with its elements from the file text. ~\newline
+ Example \+: \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_noeud}{Noeud}} $\ast$ \mbox{\hyperlink{_p_a_r_t_i_e2_8h_a34da176b176e32f7516c25007abdc356}{creer\+\_\+noeud}} (int, char)
+\begin{DoxyCompactList}\small\item\em Function which create a node. ~\newline
+ Example \+: \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_p_a_r_t_i_e2_8h_ac1a69473fccabf690f647eccd1fcf35a}{position\+\_\+min\+\_\+liste}} (\mbox{\hyperlink{struct_element}{Element}} $\ast$)
+\begin{DoxyCompactList}\small\item\em Function which checks the smallest occurrence of the simply linked list. ~\newline
+ Example \+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_p_a_r_t_i_e2_8h_a2796355ede0463775bfc4d4c0f7b6fc0}{supprimer\+\_\+maillon\+\_\+liste}} (\mbox{\hyperlink{struct_element}{Element}} $\ast$$\ast$, int)
+\begin{DoxyCompactList}\small\item\em Function which deletes a link according to the position in the list of the link to delete. ~\newline
+ Example \+: \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creation de l\textquotesingle{}arbre Huffman premiere version. 
+
+\begin{DoxyAuthor}{Author}
+Camelia M\+A\+H\+R\+AZ \href{mailto:camelia.mahraz@efrei.net}{\texttt{ camelia.\+mahraz@efrei.\+net}} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+December 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_p_a_r_t_i_e2_8h_ac0ed2ce23f797f91c40ac5e6be8d2b29}\label{_p_a_r_t_i_e2_8h_ac0ed2ce23f797f91c40ac5e6be8d2b29}} 
+\index{PARTIE2.h@{PARTIE2.h}!afficher\_Liste@{afficher\_Liste}}
+\index{afficher\_Liste@{afficher\_Liste}!PARTIE2.h@{PARTIE2.h}}
+\doxysubsubsection{\texorpdfstring{afficher\_Liste()}{afficher\_Liste()}}
+{\footnotesize\ttfamily void afficher\+\_\+\+Liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_element}{Element}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Function to display the elements of the simply linked list. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+nothing it\textquotesingle{}s a void function.
+\end{DoxyReturn}
+\mbox{\Hypertarget{_p_a_r_t_i_e2_8h_a93bc34dfab8cb4315473a54c918737e7}\label{_p_a_r_t_i_e2_8h_a93bc34dfab8cb4315473a54c918737e7}} 
+\index{PARTIE2.h@{PARTIE2.h}!ajouter\_un\_a\_occurence@{ajouter\_un\_a\_occurence}}
+\index{ajouter\_un\_a\_occurence@{ajouter\_un\_a\_occurence}!PARTIE2.h@{PARTIE2.h}}
+\doxysubsubsection{\texorpdfstring{ajouter\_un\_a\_occurence()}{ajouter\_un\_a\_occurence()}}
+{\footnotesize\ttfamily void ajouter\+\_\+un\+\_\+a\+\_\+occurence (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_element}{Element}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Function which increment the occurrence of the given character in a simply linked list. 
+
+\begin{DoxyReturn}{Returns}
+nothing it is a void function. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_p_a_r_t_i_e2_8h_ab14c0b2939fb5dc7d05e55a43cc2609c}\label{_p_a_r_t_i_e2_8h_ab14c0b2939fb5dc7d05e55a43cc2609c}} 
+\index{PARTIE2.h@{PARTIE2.h}!ajouter\_valeur\_liste\_fin@{ajouter\_valeur\_liste\_fin}}
+\index{ajouter\_valeur\_liste\_fin@{ajouter\_valeur\_liste\_fin}!PARTIE2.h@{PARTIE2.h}}
+\doxysubsubsection{\texorpdfstring{ajouter\_valeur\_liste\_fin()}{ajouter\_valeur\_liste\_fin()}}
+{\footnotesize\ttfamily void ajouter\+\_\+valeur\+\_\+liste\+\_\+fin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_element}{Element}} $\ast$}]{,  }\item[{char}]{ }\end{DoxyParamCaption})}
+
+
+
+Function to add an element at the end of a simply linked list with a letter and its occurrence. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+nothing it\textquotesingle{}s a void function. \textbackslash{}
+\end{DoxyReturn}
+\mbox{\Hypertarget{_p_a_r_t_i_e2_8h_ad3642a1d2cdc61b0ab5f725861ef2824}\label{_p_a_r_t_i_e2_8h_ad3642a1d2cdc61b0ab5f725861ef2824}} 
+\index{PARTIE2.h@{PARTIE2.h}!condition\_liste\_caracteres\_occurrences@{condition\_liste\_caracteres\_occurrences}}
+\index{condition\_liste\_caracteres\_occurrences@{condition\_liste\_caracteres\_occurrences}!PARTIE2.h@{PARTIE2.h}}
+\doxysubsubsection{\texorpdfstring{condition\_liste\_caracteres\_occurrences()}{condition\_liste\_caracteres\_occurrences()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_element}{Element}}$\ast$ condition\+\_\+liste\+\_\+caracteres\+\_\+occurrences (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_element}{Element}} $\ast$}]{,  }\item[{char}]{ }\end{DoxyParamCaption})}
+
+
+
+Function which checks if the character exists and if so how to add it in the simply linked list and else increment the occurrence. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}(temp-\/>lettre == caractere)\{}
+\DoxyCodeLine{     \mbox{\hyperlink{_p_a_r_t_i_e2_8h_a93bc34dfab8cb4315473a54c918737e7}{ajouter\_un\_a\_occurence}}(temp);}
+\DoxyCodeLine{     \textcolor{keywordflow}{return} liste;\}}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+the first \mbox{\hyperlink{struct_element}{Element}}\textquotesingle{}s pointer, if the \mbox{\hyperlink{struct_element}{Element}} is created. 
+
+{\ttfamily N\+U\+LL}, if the \mbox{\hyperlink{struct_element}{Element}} is empty. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_p_a_r_t_i_e2_8h_a322e21a801cd141a59078a681c7d0735}\label{_p_a_r_t_i_e2_8h_a322e21a801cd141a59078a681c7d0735}} 
+\index{PARTIE2.h@{PARTIE2.h}!creer\_Element@{creer\_Element}}
+\index{creer\_Element@{creer\_Element}!PARTIE2.h@{PARTIE2.h}}
+\doxysubsubsection{\texorpdfstring{creer\_Element()}{creer\_Element()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_element}{Element}}$\ast$ creer\+\_\+\+Element (\begin{DoxyParamCaption}\item[{char}]{ }\end{DoxyParamCaption})}
+
+
+
+Function to create an element of a simply linked list with a letter and its occurrence. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{struct_element}{Element}}* element = \mbox{\hyperlink{_p_a_r_t_i_e2_8h_a322e21a801cd141a59078a681c7d0735}{creer\_Element}}();}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+the first \mbox{\hyperlink{struct_element}{Element}}\textquotesingle{}s pointer, if the \mbox{\hyperlink{struct_element}{Element}} is created. 
+
+{\ttfamily N\+U\+LL}, if the \mbox{\hyperlink{struct_element}{Element}} could not be created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_p_a_r_t_i_e2_8h_a34da176b176e32f7516c25007abdc356}\label{_p_a_r_t_i_e2_8h_a34da176b176e32f7516c25007abdc356}} 
+\index{PARTIE2.h@{PARTIE2.h}!creer\_noeud@{creer\_noeud}}
+\index{creer\_noeud@{creer\_noeud}!PARTIE2.h@{PARTIE2.h}}
+\doxysubsubsection{\texorpdfstring{creer\_noeud()}{creer\_noeud()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_noeud}{Noeud}}$\ast$ creer\+\_\+noeud (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{char}]{ }\end{DoxyParamCaption})}
+
+
+
+Function which create a node. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{struct_noeud}{Noeud}}* noeud = \mbox{\hyperlink{_p_a_r_t_i_e2_8h_a34da176b176e32f7516c25007abdc356}{creer\_noeud}}();}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+the node which was created. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_p_a_r_t_i_e2_8h_ae4fe484524f665c81337b4d5bbac5524}\label{_p_a_r_t_i_e2_8h_ae4fe484524f665c81337b4d5bbac5524}} 
+\index{PARTIE2.h@{PARTIE2.h}!liberer\_liste@{liberer\_liste}}
+\index{liberer\_liste@{liberer\_liste}!PARTIE2.h@{PARTIE2.h}}
+\doxysubsubsection{\texorpdfstring{liberer\_liste()}{liberer\_liste()}}
+{\footnotesize\ttfamily void liberer\+\_\+liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_element}{Element}} $\ast$$\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Function to free memory of a simply linked list. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+nothing it is a void function. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_p_a_r_t_i_e2_8h_ae8317d94837eb838a5845a5167031ba8}\label{_p_a_r_t_i_e2_8h_ae8317d94837eb838a5845a5167031ba8}} 
+\index{PARTIE2.h@{PARTIE2.h}!occurrence\_caractere@{occurrence\_caractere}}
+\index{occurrence\_caractere@{occurrence\_caractere}!PARTIE2.h@{PARTIE2.h}}
+\doxysubsubsection{\texorpdfstring{occurrence\_caractere()}{occurrence\_caractere()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_element}{Element}}$\ast$ occurrence\+\_\+caractere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function to create a simply linked list with its elements from the file text. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{struct_element}{Element}}* element = \mbox{\hyperlink{_p_a_r_t_i_e2_8h_ae8317d94837eb838a5845a5167031ba8}{occurrence\_caractere}}();}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+the list, if the List is created. 
+
+{\ttfamily N\+U\+LL}, if the List could not be created.
+\end{DoxyReturn}
+\mbox{\Hypertarget{_p_a_r_t_i_e2_8h_ac1a69473fccabf690f647eccd1fcf35a}\label{_p_a_r_t_i_e2_8h_ac1a69473fccabf690f647eccd1fcf35a}} 
+\index{PARTIE2.h@{PARTIE2.h}!position\_min\_liste@{position\_min\_liste}}
+\index{position\_min\_liste@{position\_min\_liste}!PARTIE2.h@{PARTIE2.h}}
+\doxysubsubsection{\texorpdfstring{position\_min\_liste()}{position\_min\_liste()}}
+{\footnotesize\ttfamily int position\+\_\+min\+\_\+liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_element}{Element}} $\ast$}]{ }\end{DoxyParamCaption})}
+
+
+
+Function which checks the smallest occurrence of the simply linked list. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (temp-\/>occurrence < minimum)}
+\DoxyCodeLine{     \{}
+\DoxyCodeLine{         minimum = temp-\/>occurrence;}
+\DoxyCodeLine{     \}}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+the minimum if it exists. 
+
+{\ttfamily N\+U\+LL}, if the \mbox{\hyperlink{struct_element}{Element}} is empty. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_p_a_r_t_i_e2_8h_a2796355ede0463775bfc4d4c0f7b6fc0}\label{_p_a_r_t_i_e2_8h_a2796355ede0463775bfc4d4c0f7b6fc0}} 
+\index{PARTIE2.h@{PARTIE2.h}!supprimer\_maillon\_liste@{supprimer\_maillon\_liste}}
+\index{supprimer\_maillon\_liste@{supprimer\_maillon\_liste}!PARTIE2.h@{PARTIE2.h}}
+\doxysubsubsection{\texorpdfstring{supprimer\_maillon\_liste()}{supprimer\_maillon\_liste()}}
+{\footnotesize\ttfamily void supprimer\+\_\+maillon\+\_\+liste (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_element}{Element}} $\ast$$\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+
+
+Function which deletes a link according to the position in the list of the link to delete. ~\newline
+ Example \+: 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if}(temp1-\/>next == NULL)\{}
+\DoxyCodeLine{         free(temp1-\/>next);}
+\DoxyCodeLine{         temp1 = NULL;}
+\DoxyCodeLine{     \}}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+nothing it is a void function. 
+\end{DoxyReturn}
