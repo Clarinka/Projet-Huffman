@@ -114,7 +114,7 @@ int compter_carac_txt()
     fclose(fichier);
     return nb_carac;
 }
-
+ 
 
 
 int compter_carac_txt_bin()
