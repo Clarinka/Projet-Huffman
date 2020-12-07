@@ -154,6 +154,14 @@ int position_min_liste(Element*);
 void supprimer_maillon_liste(Element**, int);
 
 /**
+* \brief Function that returns a Huffman tree, from a list of occurrences.
+* \return the tree which was created.
+*/
+
+Noeud* creation_liste_de_noeud(Element* );
+
+
+/**
 * \brief Function that stores the dictionary from the Huffman tree in a txt file.
 * \return nothing it is a void function.
 */
