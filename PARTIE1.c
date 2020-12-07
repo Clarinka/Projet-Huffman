@@ -3,13 +3,6 @@
 
 
 
-void convertir_binaire(int* tableau, char* caract_a_convertir)
-{
-    return NULL;
-}
-
-
-
 
 void equivalent_fichier_texte()
 {
