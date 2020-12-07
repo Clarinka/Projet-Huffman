@@ -18,7 +18,7 @@ Noeud* création_liste_de_noeud(Element* l)
 
 
 
-void fichier_texte_arbre_Huffman(Noeud* )
+void fichier_texte_arbre_Huffman(Noeud* arbre)
 {
    return NULL;
 }
