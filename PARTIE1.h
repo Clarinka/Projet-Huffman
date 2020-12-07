@@ -12,11 +12,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
-* \brief Function to convert a character to bits.
-* \return nothing it is a void function.
-*/
-void convertir_binaire(int*, char*);
 
 /**
  *\brief Function to convert characters via a text file to bits.
