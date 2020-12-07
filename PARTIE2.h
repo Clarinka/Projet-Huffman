@@ -153,6 +153,40 @@ int position_min_liste(Element*);
 
 void supprimer_maillon_liste(Element**, int);
 
+/**
+* \brief Function that returns a Huffman tree, from a list of occurrences.
+* \return the tree which was created.
+*/
 
+Noeud* creation_liste_de_noeud(Element* );
+
+/**
+* \brief Function that stores the dictionary from the Huffman tree in a txt file.
+* \return nothing it is a void function.
+*/
+
+void fichier_texte_arbre_Huffman(Noeud* );
+
+/**
+* \brief Function which translates a text into a binary sequence based on a Huffman dictionary.
+* \return nothing it is a void function.
+*/
+
+void traduction_texte_en_suite_binaire();
+
+/**
+* \brief Function that compresses a text file.
+* \return nothing it is a void function.
+*/
+
+void compression_fichier_texte();
+
+
+/**
+* \brief Function which decompresses a text file from a Huffman tree.
+* \return nothing it is a void function.
+*/
+
+void decompression_fichier_texte();
 
 #endif /* PARTIE2_h */
