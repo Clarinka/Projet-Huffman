@@ -149,7 +149,7 @@ int min_liste(Element* );
 * \return \c NULL, if the Element is empty.
 */
 
-int position_min_liste(Element* );
+int position_min_liste(Element* , int );
 
 
 /**
@@ -179,7 +179,7 @@ void afficher_Liste_de_noeuds(Noeud* );
 * \return \c NULL, if the Element is empty.
 */
 
-Noeud* creation_liste_de_noeud(Element* );
+Noeud* creation_liste_de_noeud(Element* , int );
 
 /**
 * \brief Function that returns a Huffman tree, from a list of occurrences.
