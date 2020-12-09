@@ -33,7 +33,7 @@ typedef struct Noeud
 }Noeud;
 
 /**
- * \brief Function to create an element of a simply linked list with a letter and its occurrence.
+* \brief Function to create an element of a simply linked list with a letter and its occurrence.
 * \n Example :
 * \code{.c}
 * Element* element = creer_Element();
@@ -41,51 +41,45 @@ typedef struct Noeud
 * \return the first Element's pointer, if the Element is created.
 * \return \c NULL, if the Element could not be created.
 */
-Element* creer_Element(char);
-
-/**
- * \brief Function to add an element at the end of a simply linked list with a letter and its occurrence.
-* \n Example :
-* \code{.c}
-*
-* \endcode
-* \return nothing it's a void function.
-* \
- * .
- */
-void ajouter_valeur_liste_fin(Element*, char);
-
-
-/**
- *\brief Function which increment the occurrence of the given character in a simply linked list.
-* \return nothing it is a void function.
- */
-
-void ajouter_un_a_occurence(Element*);
-
-/**
- * \brief Function to display the elements of the simply linked list.
-* \n Example :
-* \code{.c}
-*
-* \endcode
-* \return nothing it's a void function.
-
- *
- * .
- */
-void afficher_Liste(Element*);
+Element* creer_Element(char );
 
 
 /**
 * \brief Function to free memory of a simply linked list.
-* \n Example :
-* \code{.c}
-*
-* \endcode
 * \return nothing it is a void function.
 */
-void liberer_liste(Element**);
+void liberer_liste(Element** );
+
+
+/**
+* \brief Function to free memory of a simply linked list of nodes.
+* \return nothing it is a void function.
+*/
+void liberer_liste_de_noeuds(Noeud** );
+
+
+/**
+* \brief Function to add an element at the end of a simply linked list with a letter and its occurrence.
+* \return nothing it's a void function.
+*/
+void ajouter_valeur_liste_fin(Element* , char);
+
+
+/**
+*\brief Function which increment the occurrence of the given character in a simply linked list.
+* \return nothing it is a void function.
+*/
+
+void ajouter_un_a_occurence(Element* );
+
+/**
+* \brief Function to display the elements of the simply linked list.
+* \return nothing it's a void function.
+*/
+void afficher_Liste(Element* );
+
+
+
 
 /**
 *\brief Function which checks if the character exists and if so how to add it in the simply linked list and else increment the occurrence.
@@ -99,7 +93,10 @@ void liberer_liste(Element**);
 * \return \c NULL, if the Element is empty.
 */
 
-Element* condition_liste_caracteres_occurrences(Element*, char);
+Element* condition_liste_caracteres_occurrences(Element* , char );
+
+
+
 /**
 * \brief Function to create a simply linked list with its elements from the file text.
 * \n Example :
@@ -121,10 +118,10 @@ Element* occurrence_caractere();
 * \endcode
 * \return the node which was created.
 */
-Noeud* creer_noeud(int, char);
+Noeud* creer_noeud(int , char );
 
 /**
-*\brief Function which checks the smallest occurrence of the simply linked list.
+*\brief Function which checks the minimum of the simply linked list.
 * \n Example :
 *       \code{.c}
 *       if (temp->occurrence < minimum)
@@ -136,7 +133,23 @@ Noeud* creer_noeud(int, char);
 * \return \c NULL, if the Element is empty.
 */
 
-int position_min_liste(Element*);
+int min_liste(Element* );
+
+
+/**
+*\brief Function which checks the smallest occurrence of the simply linked list.
+* \n Example :
+*       \code{.c}
+*        while(temp->occurrence != minimum){
+*           position = position + 1;
+*            temp = temp->next;
+*        }
+*       \endcode
+* \return the minimum if it exists.
+* \return \c NULL, if the Element is empty.
+*/
+
+int position_min_liste(Element* );
 
 
 /**
@@ -151,14 +164,29 @@ int position_min_liste(Element*);
 * \return nothing it is a void function.
 */
 
-void supprimer_maillon_liste(Element**, int);
+void supprimer_maillon_liste(Element** , int );
+
+
+/**
+* \brief Function to display the elements of the simply linked list of nodes.
+* \return nothing it's a void function.
+*/
+void afficher_Liste_de_noeuds(Noeud* );
 
 /**
 * \brief Function that returns a Huffman tree, from a list of occurrences.
 * \return the tree which was created.
+* \return \c NULL, if the Element is empty.
 */
 
 Noeud* creation_liste_de_noeud(Element* );
+
+/**
+* \brief Function that returns a Huffman tree, from a list of occurrences.
+* \return the tree which was created.
+* \return \c NULL, if the Node is empty.
+*/
+void inverser_liste(Noeud ** );
 
 
 /**
@@ -173,14 +201,14 @@ void fichier_texte_arbre_Huffman(Noeud* );
 * \return nothing it is a void function.
 */
 
-void traduction_texte_en_suite_binaire();
+void dico_recherche(char ,FILE** ,FILE* );
 
 /**
 * \brief Function that compresses a text file.
 * \return nothing it is a void function.
 */
 
-void compression_fichier_texte();
+void trad_text_bin_huffman();
 
 
 /**
