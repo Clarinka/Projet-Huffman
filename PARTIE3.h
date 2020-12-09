@@ -1,7 +1,6 @@
 #ifndef PARTIE3_h
 #define PARTIE3_h
 #include<stdio.h>
-#include<stdlib.h>
 
 
 
