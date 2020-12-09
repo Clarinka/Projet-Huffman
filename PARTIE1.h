@@ -10,7 +10,6 @@
 #ifndef PARTIE1_h
 #define PARTIE1_h
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
 * \brief Function to convert a character to bits.
