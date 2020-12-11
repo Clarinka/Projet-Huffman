@@ -2,17 +2,17 @@
 #include<stdlib.h>
 #include "PARTIE3.h"
 
-void ajout_occurrence(int* tab,Noeud* Arbre)
+void ajout_occurrence()
 { 
 return NULL;
 }
 
-void trier_tab_noeud(int* tab)
+void trier_tab_noeud(Noeud tab)
 {
 return NULL;
 }
 
-void creer_Huffman_pile(Queue* File, Queue* File, int* tab)
+void creer_Huffman_pile(Queue* File, Queue* File, Noeud tab)
 {
 return NULL;
 }
