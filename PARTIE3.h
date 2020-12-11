@@ -3,6 +3,24 @@
 #include<stdio.h>
 
 
+/**
+* \brief Function which calculates the size of an array.
+* \return the lenght of the array.
+* \return NULL if the array is empty.
+*/
+int taille_tableau_de_noeud(Noeud );
+
+/**
+* \brief Function which searches a table by dichotomy in an array.
+* \return the array.
+*/
+Noeud* recherche_dichotomie_tableau_noeuds(Noeud , char );
+
+/**
+* \brief Function which displays an array of nodes.
+* \return nothing it is a void function.
+*/
+void affichage_tableau_de_noeuds(Noeud );
 
 /**
 * \brief Function which, by dichotomous search, adds to an array of nodes an occurrence when the character has already been found, or which adds the node of the character otherwise.
