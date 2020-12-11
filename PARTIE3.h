@@ -14,7 +14,7 @@ int taille_tableau_de_noeud(Noeud );
 * \brief Function which searches a table by dichotomy in an array.
 * \return the array.
 */
-Noeud* recherche_dichotomie_tableau_noeuds(Noeud , char );
+Noeud recherche_dichotomie_tableau_noeuds(Noeud , char );
 
 /**
 * \brief Function which displays an array of nodes.
