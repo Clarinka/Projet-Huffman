@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include "PARTIE3.h"
+#include "PARTIE2.h"
 
 void ajout_occurrence()
 { 
