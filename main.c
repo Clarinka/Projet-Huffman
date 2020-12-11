@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "partie2.h"
-#include "texte.h"
+#include "PARTIE2.h"
+#include "PARTIE1.h"
+#include "PARTIE3.h"
 
 int main()
 {
@@ -29,9 +30,10 @@ int main()
     printf("\n\n");
     inverser_liste(&Arbre);
     afficher_Liste_de_noeuds(Arbre);
-    fichier_texte_arbre_Huffman(Arbre);
 
+    fichier_texte_arbre_Huffman(Arbre);
     trad_text_bin_huffman();
+
 
     fclose(fichier);
     fclose(fichier_binaire);
