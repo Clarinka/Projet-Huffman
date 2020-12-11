@@ -1,4 +1,4 @@
-#include "PARTIE2.h"
+#include "partie2.h"
 #include <stdlib.h>
 
 /* liste contenant chaque caractère présent dans le texte
@@ -329,20 +329,7 @@ Noeud* creation_liste_de_noeud(Element* l,int poids_precedent)
         // si liste n'est pas vide on peut regarder s'il y a un autre minimum = au premier minimum
         if (temp != NULL){
 
-            minimum_liste_2 = min_liste(temp);
-
-            // si le nouveau minimum de la liste est > au premier => on le prend pas en compte
-          /*  if(minimum_liste_2 == 0 || (minimum_liste_2 != 0 && minimum_liste_1 < minimum_liste_2)){
-
-                noeud_3 = creer_noeud(noeud_1->poids + poids_precedent, 0);
-                noeud_3->left = noeud_1;
-                poids_precedent = noeud_3->poids;
-            }*/
-
-
-            // on fait la même chose avec le deuxième maillon
-          //  else if(minimum_liste_2 != 0 && minimum_liste_1 == minimum_liste_2){
-
+                minimum_liste_2 = min_liste(temp);
                 position_maillon = position_min_liste(temp,minimum_liste_2);
 
                 while(i != position_maillon){
@@ -360,7 +347,7 @@ Noeud* creation_liste_de_noeud(Element* l,int poids_precedent)
                 noeud_3->left = noeud_2;
                 poids_precedent = noeud_3->poids;
 
-         //  }
+
 
 
         }
@@ -430,60 +417,39 @@ void fichier_texte_arbre_Huffman(Noeud* arbre)
 
         while(temp != NULL){
 
-      /*  if(temp->left != NULL){
+
             caractere = temp->left->lettre;
             tableau[i] = '0';
             fprintf(fichier_dico,"%c : %s \n",caractere, tableau);
-           // tableau[i] = '1';
-            i = i + 1;
-        }
 
-        if(temp->right != NULL){
             caractere = temp->right->lettre;
             tableau[i] = '1';
             fprintf(fichier_dico,"%c : %s \n",caractere, tableau);
-            //tableau[i] = '0';
-            i = i + 1;
-        }*/
-        caractere = temp->left->lettre;
-        tableau[i] = '0';
-        fprintf(fichier_dico,"%c : %s \n",caractere, tableau);
-       /* tableau[i] = '1';
-        i = i + 1;*/
-        caractere = temp->right->lettre;
-        tableau[i] = '1';
-        fprintf(fichier_dico,"%c : %s \n",caractere, tableau);
-        //tableau[i] = '0';
-        i = i + 1;
 
-        temp = temp->next;
+            i = i + 1;
+            temp = temp->next;
         }
 
     }
+
     else{
 
-    tableau[0] = '1';
-    temp = temp->next;
-    while(temp != NULL){
+        tableau[0] = '1';
+        temp = temp->next;
+        while(temp != NULL){
 
-        //if(temp->left != NULL){
             caractere = temp->left->lettre;
             tableau[i] = '0';
             fprintf(fichier_dico,"%c : %s \n",caractere, tableau);
-          //  tableau[i] = '1';
-          //  i = i + 1;
-       // }
 
-       // if(temp->right != NULL){
             caractere = temp->right->lettre;
             tableau[i] = '1';
             fprintf(fichier_dico,"%c : %s \n",caractere, tableau);
-           // tableau[i] = '0';
+
             i = i + 1;
-       // }
-        temp = temp->next;
+            temp = temp->next;
+            }
         }
-    }
 
     }
 
