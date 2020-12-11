@@ -6,7 +6,6 @@
 
 int main()
 {
-    int min, position;
     FILE* fichier = NULL;
     FILE* fichier_binaire = NULL;
 
